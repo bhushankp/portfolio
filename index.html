@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhushan Patil | Golang Developer</title>
+<style>
+  :root {
+    --bg: #0b0e14;
+    --bg-alt: #11151d;
+    --border: #1f2733;
+    --text: #d6dee8;
+    --muted: #7d8794;
+    --accent: #00ADD8;
+    --accent2: #5eead4;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px 40px; }
+
+  /* HERO */
+  .hero .prompt { color: var(--accent2); font-size: 14px; }
+  .hero h1 {
+    font-size: 32px;
+    margin: 8px 0 4px;
+    color: #fff;
+  }
+  .hero h1 span { color: var(--accent); }
+  .hero .role { color: var(--muted); font-size: 16px; margin-bottom: 20px; }
+  .hero p { color: var(--text); font-size: 15px; max-width: 560px; }
+
+  /* NAV DOTS */
+  .socials { margin-top: 24px; display: flex; gap: 16px; font-size: 14px; }
+  .socials a {
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color .2s, border-color .2s;
+  }
+  .socials a:hover { color: var(--accent2); border-color: var(--accent2); }
+
+  section { margin-top: 56px; }
+  .section-title {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 18px;
+  }
+  .section-title::before { content: "// "; color: var(--muted); }
+
+  /* STACK */
+  .stack-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .pill {
+    border: 1px solid var(--border);
+    background: var(--bg-alt);
+    color: var(--text);
+    font-size: 13px;
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+
+  /* EXPERIENCE TIMELINE */
+  .job { position: relative; padding-left: 24px; margin-bottom: 32px; border-left: 1px solid var(--border); }
+  .job::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 4px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .job-header { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+  .job-title { color: #fff; font-size: 15px; font-weight: bold; }
+  .job-period { color: var(--muted); font-size: 13px; white-space: nowrap; }
+  .job-company { color: var(--accent2); font-size: 13px; margin: 2px 0 10px; }
+  .job ul { padding-left: 18px; }
+  .job li { color: var(--text); font-size: 14px; margin-bottom: 6px; }
+  .job li::marker { color: var(--accent); }
+
+  /* PROJECTS */
+  .project {
+    border: 1px solid var(--border);
+    background: var(--bg-alt);
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+  }
+  .project-title { color: #fff; font-size: 14px; font-weight: bold; margin-bottom: 6px; }
+  .project-desc { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+  .project-tech { color: var(--accent2); font-size: 12px; }
+
+  /* FOOTER */
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  footer a { color: var(--accent2); text-decoration: none; }
+
+  @media (max-width: 480px) {
+    .hero h1 { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="prompt">~$ whoami</div>
+    <h1>Bhushan <span>Patil</span></h1>
+    <div class="role">Golang Developer · Backend Systems · Cloud-Native Platforms</div>
+    <p>I build reliable backend services and APIs in Go — from real-time bidding pipelines to cloud-native, Kubernetes-deployed platforms. 3.2+ years shipping production Go code.</p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/bhushan-patil-a91817294/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/bhushankp" target="_blank">GitHub</a>
+      <a href="mailto:bhushanpatilbkp68@gmail.com">Email</a>
+    </div>
+  </div>
+
+  <!-- STACK -->
+  <section>
+    <div class="section-title">tech_stack</div>
+    <div class="stack-grid">
+      <span class="pill">Go</span>
+      <span class="pill">Gin</span>
+      <span class="pill">Gorilla Mux</span>
+      <span class="pill">GORM</span>
+      <span class="pill">MySQL</span>
+      <span class="pill">Redis</span>
+      <span class="pill">Docker</span>
+      <span class="pill">Kubernetes</span>
+      <span class="pill">Jenkins</span>
+      <span class="pill">Harbor</span>
+      <span class="pill">Grype</span>
+      <span class="pill">Prometheus</span>
+      <span class="pill">Swagger</span>
+      <span class="pill">Git</span>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <div class="section-title">experience</div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">Golang Developer</div>
+        <div class="job-period">Oct 2025 – Present</div>
+      </div>
+      <div class="job-company">Neurealm · Cloud-native networking &amp; security platform</div>
+      <ul>
+        <li>Built and maintained Golang backend services and REST APIs on a Kubernetes-deployed platform</li>
+        <li>Led Redis migration from in-cluster to managed infrastructure</li>
+        <li>Troubleshot Kubernetes pods/services across Dev &amp; Staging; remediated container CVEs via Grype</li>
+        <li>Managed Jenkins CI/CD pipelines and Harbor image validation</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-header">
+        <div class="job-title">Golang Developer</div>
+        <div class="job-period">Aug 2023 – Oct 2025</div>
+      </div>
+      <div class="job-company">Bitinject Software Solutions · Real-Time Bidding Platform (DAMT)</div>
+      <ul>
+        <li>Built REST APIs and microservices handling live bid requests, strategy evaluation &amp; responses</li>
+        <li>Implemented DB layer with GORM, containerized services with Docker</li>
+        <li>Wrote middleware for auth/logging, documented endpoints with Swagger</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <div class="section-title">projects</div>
+
+    <div class="project">
+      <div class="project-title">DAMT — Real-Time Bidding Platform</div>
+      <div class="project-desc">Bid request → strategy evaluation → bid response pipeline with campaign tracking.</div>
+      <div class="project-tech">Go · Docker · Kubernetes · Redis · Kafka · MySQL · Prometheus</div>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Cloud-Native Platform Services</div>
+      <div class="project-desc">Backend microservices for a Kubernetes-deployed networking &amp; security platform.</div>
+      <div class="project-tech">Go · MySQL · GORM · Redis · Docker · Kubernetes</div>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Go REST API Starter Kit</div>
+      <div class="project-desc">Reusable Golang API boilerplate with Gin, Swagger docs, and unit tests.</div>
+      <div class="project-tech">Go · Gin · GORM · Swagger</div>
+    </div>
+  </section>
+
+  <footer>
+    <div>Pune, Maharashtra, India</div>
+    <div><a href="mailto:bhushanpatilbkp68@gmail.com">bhushanpatilbkp68@gmail.com</a> · +91 7756030473</div>
+  </footer>
+
+</div>
+</body>
+</html>
